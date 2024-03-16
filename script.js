@@ -50,7 +50,7 @@ btnCleanDisplay.onclick = function () {
 
 function calculateResult() {
   if (verifyOperator(display.value.substring(display.value.length - 1, display.value.length))) {
-    deleteLastDigit(); //If the last digit on display is an operator, it's ignored
+    deleteLastDigit(); 
   }
 
   var calculatedValue = calculateArray(display.value); 
@@ -62,7 +62,7 @@ function calculateResult() {
 
 function deleteLastDigit() {
   if (display.value.length > 0) {
-    if (display.value[display.value.length - 1] === ".") {//If the deleted character is a decimal point, it can be replaced by a new one
+    if (display.value[display.value.length - 1] === ".") {
       pointCounter = 0;
     }
     display.value = display.value.substring(0, display.value.length - 1);
@@ -74,7 +74,7 @@ function writeOnDisplay() {
 
   if (verifyOperator(lastDigit)){
     pointCounter = 0;
-    if (verifyOperator(display.value.substring(display.value.length - 1, display.value.length))) { //replaces the previous operator by the new operator inputed
+    if (verifyOperator(display.value.substring(display.value.length - 1, display.value.length))) { 
       deleteLastDigit();
     }
   } 
