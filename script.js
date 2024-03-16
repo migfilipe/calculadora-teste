@@ -1,14 +1,16 @@
 var display = document.getElementById("display");
 
 var listenerBtn = [];
+//COMEÇANDO PELO AMOR DE DEUS NÃO ESQUECE ))
 
-//Operator buttons
+
+//operações
 listenerBtn.push(document.getElementById("sum"));
 listenerBtn.push(document.getElementById("subtraction"));
 listenerBtn.push(document.getElementById("division"));
 listenerBtn.push(document.getElementById("multiplication"));
 
-//Number buttons
+//botões numericos
 listenerBtn.push(document.getElementById("num0"));
 listenerBtn.push(document.getElementById("num1"));
 listenerBtn.push(document.getElementById("num2"));
@@ -20,7 +22,7 @@ listenerBtn.push(document.getElementById("num7"));
 listenerBtn.push(document.getElementById("num8"));
 listenerBtn.push(document.getElementById("num9"));
 
-//Additional buttons
+//botões adicionais
 var btnResult = document.getElementById("result");
 var btnCleanDisplay = document.getElementById("cleanDisplay");
 var btnDeleteDigit = document.getElementById("deleteDigit");
